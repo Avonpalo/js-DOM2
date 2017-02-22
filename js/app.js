@@ -7,13 +7,20 @@ Also don't forget to run your live-server for this assignment.*/
 
 Rating: 5 Stars*/
 
+var nameChange = document.getElementById("rating1");
+nameChange.innerHTML = "Rating:  5 Stars";
 
 //2. Sunrise Restaurant
 /*No rise and shine for the Sunrise Restaurant, as their price and address needs some serious updating. Bring in some sunshine by changing the price and address to the following:
 
 Price: $$$
-Adress: 525 Kapahulu Ave, Honolulu, HI 96815*/
+Address: 525 Kapahulu Ave, Honolulu, HI 96815*/
 
+var priceChange = document.getElementById("price2");
+priceChange.innerHTML = "Price: $$$";
+
+var addressChange = document.getElementById("addy2");
+addressChange.innerHTML = "Address: 525 Kapahulu Ave, Honolulu, HI 96815";
 
 //3. Ramen Nakamura
 /*Literally, where did the time go? Ramen Nakamura is missing the hours section! This mistake is timeless.
@@ -24,8 +31,21 @@ Hours: 6pm - 12am Sun - Sat
 
 Append this div element to the div id "text3"*/
 
+var divElement = document.createElement("hours3");
+/* "Hours: 6pm - 12am Sun - Sat"; */
+divElement.id = "hours3";
+divElement.innerHTML = "text3";
+main.appendChild(divElement);
 
-//4. Kam Bowl
+/*
+var para = document.createElement("P");                       // Create a <p> node
+var t = document.createTextNode("This is a paragraph.");      // Create a text node
+para.appendChild(t);                                          // Append the text to <p>
+document.getElementById("myDIV").appendChild(para);           // Append <p> to <div> with id="myDIV"
+
+*/
+
+///4. Kam Bowl
 /*Kam Bowl got no spare time to update their info and business is suffering! Help them regain their kingpin status again.
 
 Create a new div element with an id of "price4". Inside this div element, give it the following info:
