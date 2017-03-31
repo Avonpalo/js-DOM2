@@ -31,19 +31,12 @@ Hours: 6pm - 12am Sun - Sat
 
 Append this div element to the div id "text3"*/
 
-var divElement = document.createElement("hours3");
-/* "Hours: 6pm - 12am Sun - Sat"; */
+var divElement = document.createElement("div");
+
 divElement.id = "hours3";
-divElement.innerHTML = "text3";
-main.appendChild(divElement);
+divElement.innerHTML = "Hours: 6pm - 12am Sun - Sat";
+text3.appendChild(divElement);
 
-/*
-var para = document.createElement("P");                       // Create a <p> node
-var t = document.createTextNode("This is a paragraph.");      // Create a text node
-para.appendChild(t);                                          // Append the text to <p>
-document.getElementById("myDIV").appendChild(para);           // Append <p> to <div> with id="myDIV"
-
-*/
 
 ///4. Kam Bowl
 /*Kam Bowl got no spare time to update their info and business is suffering! Help them regain their kingpin status again.
@@ -55,12 +48,22 @@ Price: $$$
 Append this element to the div with the id of 
 "text4"*/
 
+var divElement = document.createElement("div");
+divElement.id = "price4";
+divElement.innerHTML = "Price: $$$";
+text4.appendChild(divElement);
+
 /*Create a new div element with an id of "addy4". Inside this div element, give it the following info:
 
 Address: 1620 N. School St, Honolulu, HI 96817
 
 Append this element to the div with the id of 
 "text4"*/
+
+var divElement = document.createElement("div");
+divElement.id = "addy4";
+divElement.innerHTML = "Address: 1620 N. School St, Honolulu, HI 96817";
+text4.appendChild(divElement);
 
 /*Create a new div element with an id of "hours4". Inside this div element, give it the following info:
 
@@ -69,12 +72,22 @@ Hours: 9am - 10pm Sun - Sat
 Append this element to the div with the id of 
 "text4"
 */
+var divElement = document.createElement("div");
+divElement.id = "hours4";
+divElement.innerHTML = "Hours: 9am - 10pm Sun - Sat";
+text4.appendChild(divElement);
 
 /*Create a paragraph element with an id of "update4". Inside this paragraph element, give it the following info:
 
 I'd leave a blank space for this oxtail soup!
 
 Append this element to the div id of "comment4"*/
+
+var paraElement = document.createElement("p");
+var node = document.createTextNode("I'd leave a blank space for this oxtail soup!");
+paraElement.id = "update4";
+paraElement.innerHTML = "I'd leave a blank space for this oxtail soup!";
+comment4.appendChild(paraElement);
 
 
 //5. The Death Star Cafe
@@ -86,9 +99,23 @@ Append this element to the div id of "comment4"*/
 "rating5"
 "price5"
 "addy5"
-"hours5"
+"hours5" */
 
-Add the following info for each specific div id:
+var divElement = document.createElement("div");
+divElement.id = "name5";
+var divElement = document.createElement("div");
+divElement.id = "rating5";
+var divElement = document.createElement("div");
+divElement.id = "price5";
+var divElement = document.createElement("div");
+divElement.id = "addy5";
+var divElement = document.createElement("div");
+divElement.id = "hours5";
+
+
+
+
+/*Add the following info for each specific div id:
 
 name5: 5. The Death Star Cafe
 rating5: Rating: 2 Stars
@@ -99,3 +126,28 @@ hours5: Hours: We never close.
 Append the div elements to the div id "text5"
 */
 
+
+var divElement = document.createElement("div");
+divElement.id = "name5";
+divElement.innerHTML = "5. The Death Star Cafe";
+text5.appendChild(divElement);
+
+var divElement = document.createElement("div");
+divElement.id = "rating5";
+divElement.innerHTML = "Rating: 2 Stars";
+text5.appendChild(divElement);
+
+var divElement = document.createElement("div");
+divElement.id = "price5";
+divElement.innerHTML = "Price: $$";
+text5.appendChild(divElement);
+
+var divElement = document.createElement("div");
+divElement.id = "addy5";
+divElement.innerHTML = "Address: A galaxy far, far away.";
+text5.appendChild(divElement);
+
+var divElement = document.createElement("div");
+divElement.id = "hours5";
+divElement.innerHTML = "Hours: We never close.";
+text5.appendChild(divElement);
